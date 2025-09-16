@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
    <div id="container">
@@ -18,17 +21,17 @@
             <ul id="nav-list">
                 <li>HOME</li>
                 <li>O NAS</li>
-                <li>NASZE INWESTYCJE <img id="nav-down" src="./assets/img/buttons/ic_outline-navigate-next.svg" alt=""></li>
+                <li>NASZE INWESTYCJE <img id="nav-down" src="./assets/img/buttons/nav-dash.svg" alt=""></li>
                 <li>PORADNIK</li>
                 <li>WYNAJMIJ</li>
             </ul>
         </div>
-        <div id="contact-btn"><img src="./assets/img/buttons/primary-btn.svg" alt="KONTAKT"></div>
+        <div id="contact-btn"><img src="./assets/img/buttons/contact.svg" alt="KONTAKT"></div>
     </div>
 
     <div id="hero">
         <div id="hero-container">
-            <div id="badge">Twój klucz do lepszej przyszłości</div>
+            <span id="badge">Twój klucz do lepszej przyszłości</span>
             <p id="badge-text">
                 W RealEstate nieruchomości to coś więcej niż tylko budynki - to miejsca, 
                 w których powstają historie, rozwijają się biznesy i spełniają marzenia.
@@ -41,12 +44,131 @@
     </div>
 
     <div id="investments-section">
-        <div id="investments-header">
-            <p id="upper-text">nasze inwestycje</p>
+        <div id="investments-heading">
+            <span id="upper-text">nasze inwestycje</span>
             <p id="bottom-text">Nasze inwestycje to miejsca, które łączą nowoczesny design, funkcjonalność i trwałość. Każdy projekt realizowany przez RealEstate to wynik pasji, zaangażowania i dbałości o każdy szczegół.</p>
         </div>
         
     </div>
+
+    <div id="slider-section">
+        <div id="slider-container">
+            <div id="left-side">
+                <div id="feature-box"><img src="./assets/img/icons/location-icon.svg">Poznań 20-300</div>
+                <span id="heading">poznań park</span>
+                <div id="paragraph">
+                    <p>
+                        Poznań Park to kameralne osiedle nowoczesnych domów, które harmonijnie łączy komfort życia z bliskością natury. Położone zaledwie 10 minut od centrum Poznania, oferuje ciszę i zieleń bez kompromisów – z łatwym dostępem 
+                        do miejskich udogodnień.
+                    </p>
+                </div>
+                <div id="button-section">
+                    <div id="details-button"><img src="assets/img/buttons/details-button.svg" alt=""></div>
+                </div>
+                <div id="slider-arrows">
+                    <div id="prev-btn"><img src="./assets/img/buttons/left-arrow-disabled.svg" alt="previous"></div>
+                    <div id="next-btn"><img src="./assets/img/buttons/right-arrow-active.svg" alt="next"></div>
+                </div>
+            </div>
+        
+            <div id="right-side">
+                <img class="slider-photos" src="./assets/img/photos/Lowecin_4_PS-scaled.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="guide-heading">
+        <span>poradnik <br/> po nieruchomościach</span>
+    </div>
+
+    <div id="guide-section">
+        <div id="guide-section-container">
+            <div class="box">
+                <img src="./assets/img/photos/guide-photo1.svg" alt="">
+                <span class="box-heading">Jak kupić nieruchomość i nie zwariować? Przewodnik dla początkujących.</span>
+                <div class="btn-box"><img src="./assets/img/buttons/secondary-btn.svg" alt="artykul"></div>
+            </div>
+
+            <div class="box">
+                <img src="./assets/img/photos/guide-photo2.svg" alt="">
+                <span class="box-heading">Czym różni się inwestycja w nieruchomość od zwykłego zakupu?</span>
+                <div class="btn-box"><img src="./assets/img/buttons/secondary-btn.svg" alt="artykul"></div>
+            </div>
+
+            <div class="box">
+                <img src="./assets/img/photos/guide-photo3.svg" alt="">
+                <span class="box-heading">5 technologii, które powinny mieć nowoczesne domy w 2025 roku.</span>
+                <div class="btn-box"><img src="./assets/img/buttons/secondary-btn.svg" alt="artykul"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="guides-ref-section">
+        <div id="ref-container">
+            <span><img src="./assets/img/buttons/guides-btn.svg" alt=""></span>
+        </div>
+    </div>
+
+    <div id="contact-section">
+        <div id="contact-section-container">
+            <div id="contact-heading"><span id="contact-heading-text">Porozmawiajmy</span></div>
+
+            <div id="form-container">
+                <span id="form-heading">Zostaw nam wiadomość</span>
+
+                <form id="contact-form">
+                    <div class="form-input-container">
+                        <label for="e-mail">adres e-mail</label>
+                        <input class="text-input" name="e-mail" type="text" placeholder="Twój adres E-mail">
+                    </div>
+
+                    <div class="form-input-container">
+                        <label for="name">imię i nazwisko</label>
+                        <input class="text-input" name="name" type="text" placeholder="Twoje imię i nazwisko">
+                    </div>
+
+                    <div class="form-input-container">
+                        <label for="topic">temat rozmowy</label>
+                        <input class="text-input" name="topic" type="text" placeholder="O czym chcesz porozmawiać?">
+                    </div>
+
+                    <div class="form-input-container message-container">
+                        <label for="message">wiadomość</label>
+                        <textarea name="message" id="message-textarea" placeholder="Napisz swoją wiadomość..."></textarea>
+                    </div>
+
+                    <div class="form-input-container rules">
+                        <input type="radio" name="rules-radio" class="rules-radio">
+                        <label for="rules-radio" class="rules-label">
+                            Wyrażam zgodę na przetwarzanie moich danych osobowych w postaci imienia, 
+                            nazwiska, adresu e-mail i nr tel. (jeżeli został podany), podanych w powyższym 
+                            formularzu, zgodnie z przepisami rozporządzenia Parlamentu Europejskiego i Rady 
+                            (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku 
+                            z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz 
+                            uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych), 
+                            Dz. Urz. UE z 4.5.2016 r. L 119, str. 1), 
+                            w celu udzielenia odpowiedzi na złożone zapytanie. 
+                            Żądanie usunięcia danych proszę kierować na adres biuro@realestate.com<br/><br/>
+                            Informujemy, że: 1. Administratorem Pani/Pana danych osobowych jest RealEstate sp. z o.o. z siedzibą 
+                            w Poznaniu przy ul. Długiej 5 lok. 25, 01-200 Poznań (KRS nr 0001000000) (dalej „Administrator”) 
+                            e-mail: biuro@realestate.com
+                        </label>
+                    </div>
+
+                    <span id="send-btn"><img src="./assets/img/buttons/message-btn.svg" alt=""></span>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+        <div id="footer-section">
+            <div id="footer-container">
+                <p class="footer-text">&copy 2025 RealEstate Sp. z o.o. Wszelkie prawa zastrzeżone.</p>
+                <p class="footer-text">Projekt i realizacja: <b>Crafton</b></p>
+                <p class="footer-text info">Materiały zawarte na stronie WWW mają charakter poglądowy i nie mogą być traktowane jako ostateczne projekty realizacyjne. Deweloper zastrzega sobie prawo zmian. Niniejsza informacja nie stanowi oferty w rozumieniu przepisów Kodeksu Cywilnego i ma wyłącznie charakter informacyjny.</p>
+            </div>
+        </div>
    </div> 
 </body>
 </html>
