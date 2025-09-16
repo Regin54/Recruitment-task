@@ -1,0 +1,108 @@
+* {
+    font-family: 'Clash Display', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+}
+
+#logo, #contact-btn {
+    display: flex;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px 80px;
+    border-bottom: 1px solid #EBF3FA;
+}
+
+#nav-list {
+    list-style-type: none;
+    padding: 3px 0px;
+    display: flex;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px;
+    font-weight: 500;
+    color: #11273D;
+}
+
+#hero {
+    padding: 80px 120px 80px 120px;
+    height: min-content;
+    position: relative;
+}
+
+#badge {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    color: #11273D;
+    line-height: 120%;
+    font-size: 75px;
+}
+
+#badge-text {
+    font-family: 'Instrument Sans', sans-serif;
+    line-height: 160%;
+    font-size: 18px;
+    font-style: normal;
+    width: 50%;
+    color: #4D4D4D;
+}
+
+#hero-buttons {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+#investments-btn {
+    margin-right: 10px;
+}
+
+#meet-btn {
+    margin-left: 10px;
+}
+
+#investments-section {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding: 0px 40px 80px 40px;
+    background-color: green;
+}
+
+#investments-header {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+#upper-text {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: red;
+    width: 80%;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 120%;
+}
