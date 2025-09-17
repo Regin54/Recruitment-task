@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crafton</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600&display=swap" rel="stylesheet">
@@ -17,16 +17,17 @@
    <div id="container">
     <div id="nav">
         <div id="logo"><img src="./assets/img/logo/logo.svg" alt="CRAFTON"></div>
+        <button id="menu-toggle" class="hamburger">☰</button>
         <div id="nav-bar">
             <ul id="nav-list">
-                <li>HOME</li>
-                <li>O NAS</li>
-                <li>NASZE INWESTYCJE <img id="nav-down" src="./assets/img/buttons/nav-dash.svg" alt=""></li>
-                <li>PORADNIK</li>
-                <li>WYNAJMIJ</li>
+                <li class="nav-item"><a href="">HOME</a></li>
+                <li class="nav-item"><a href="">O NAS</a></li>
+                <li class="nav-item"><a href="">NASZE INWESTYCJE<img src="./assets/img/icons/nav-dash.svg"/></a></li>
+                <li class="nav-item"><a href="">PORADNIK</a></li>
+                <li class="nav-item"><a href="">WYNAJMIJ</a></li>
             </ul>
         </div>
-        <div id="contact-btn"><img src="./assets/img/buttons/contact.svg" alt="KONTAKT"></div>
+        <button class="btn primary contact">kontakt<img src="./assets/img/icons/mdi_arrow-up.svg"/></button>
     </div>
 
     <div id="hero">
@@ -37,8 +38,8 @@
                 w których powstają historie, rozwijają się biznesy i spełniają marzenia.
             </p>
             <div id="hero-buttons">
-                <div id="investments-btn"><img src="./assets/img/buttons/investments.svg" alt=""></div>
-                <div id="meet-btn"><img src="./assets/img/buttons/meet.svg" alt=""></div>
+                <button class="btn primary">nasze inwestycje<img src="./assets/img/icons/mdi_arrow-up.svg"/></button>
+                <button class="btn secondary">poznajmy się</button>
             </div>
         </div>
     </div>
@@ -54,7 +55,7 @@
     <div id="slider-section">
         <div id="slider-container">
             <div id="left-side">
-                <div id="feature-box"><img src="./assets/img/icons/location-icon.svg">Poznań 20-300</div>
+                <div id="feature-box"><img src="./assets/img/icons/location-icon.svg" id="feature-box-icon">Poznań 20-300</div>
                 <span id="heading">poznań park</span>
                 <div id="paragraph">
                     <p>
@@ -63,16 +64,19 @@
                     </p>
                 </div>
                 <div id="button-section">
-                    <div id="details-button"><img src="assets/img/buttons/details-button.svg" alt=""></div>
+                    <button class="btn primary">poznaj szczegóły<img src="./assets/img/icons/mdi_arrow-up.svg"/></button>
                 </div>
                 <div id="slider-arrows">
-                    <div id="prev-btn"><img src="./assets/img/buttons/left-arrow-disabled.svg" alt="previous"></div>
-                    <div id="next-btn"><img src="./assets/img/buttons/right-arrow-active.svg" alt="next"></div>
+                    <button class="arrow-btn prev-btn"><img src="./assets/img/icons/arrow-vector.svg"></button>
+                    <button class="arrow-btn next-btn"><img src="./assets/img/icons/arrow-vector.svg"></button>
                 </div>
             </div>
         
-            <div id="right-side">
-                <img class="slider-photos" src="./assets/img/photos/Lowecin_4_PS-scaled.svg" alt="">
+            <div id="slider">
+                <img class="slider-photo" src="./assets/img/photos/photo1.svg" alt="">
+                <img class="slider-photo" src="./assets/img/photos/photo2.svg" alt="">
+                <img class="slider-photo" src="./assets/img/photos/photo3.svg" alt="">
+                <img class="slider-photo" src="./assets/img/photos/photo4.svg" alt="">
             </div>
         </div>
     </div>
@@ -84,28 +88,28 @@
     <div id="guide-section">
         <div id="guide-section-container">
             <div class="box">
-                <img src="./assets/img/photos/guide-photo1.svg" alt="">
+                <img src="./assets/img/photos/photo2.svg" alt="">
                 <span class="box-heading">Jak kupić nieruchomość i nie zwariować? Przewodnik dla początkujących.</span>
-                <div class="btn-box"><img src="./assets/img/buttons/secondary-btn.svg" alt="artykul"></div>
+                <div class="btn-box"><button class="btn secondary">przejdź do artykułu</button></div>
             </div>
 
             <div class="box">
-                <img src="./assets/img/photos/guide-photo2.svg" alt="">
+                <img src="./assets/img/photos/photo4.svg" alt="">
                 <span class="box-heading">Czym różni się inwestycja w nieruchomość od zwykłego zakupu?</span>
-                <div class="btn-box"><img src="./assets/img/buttons/secondary-btn.svg" alt="artykul"></div>
+                <div class="btn-box"><button class="btn secondary">przejdź do artykułu</button></div>
             </div>
 
             <div class="box">
-                <img src="./assets/img/photos/guide-photo3.svg" alt="">
+                <img src="./assets/img/photos/photo3.svg" alt="">
                 <span class="box-heading">5 technologii, które powinny mieć nowoczesne domy w 2025 roku.</span>
-                <div class="btn-box"><img src="./assets/img/buttons/secondary-btn.svg" alt="artykul"></div>
+                <div class="btn-box"><button class="btn secondary">przejdź do artykułu</button></div>
             </div>
         </div>
     </div>
 
     <div id="guides-ref-section">
         <div id="ref-container">
-            <span><img src="./assets/img/buttons/guides-btn.svg" alt=""></span>
+            <button class="btn primary">więcej poradników<img src="./assets/img/icons/mdi_arrow-up.svg"/></button>
         </div>
     </div>
 
@@ -134,7 +138,7 @@
 
                     <div class="form-input-container message-container">
                         <label for="message">wiadomość</label>
-                        <textarea name="message" id="message-textarea" placeholder="Napisz swoją wiadomość..."></textarea>
+                        <textarea name="message" id="message-input" placeholder="Napisz swoją wiadomość..."></textarea>
                     </div>
 
                     <div class="form-input-container rules">
@@ -155,7 +159,7 @@
                         </label>
                     </div>
 
-                    <span id="send-btn"><img src="./assets/img/buttons/message-btn.svg" alt=""></span>
+                    <button class="btn primary send-btn">wyślij wiadomość<img src="./assets/img/icons/mdi_arrow-up.svg"></button>
                 </form>
 
             </div>
@@ -171,4 +175,7 @@
         </div>
    </div> 
 </body>
+
+<script src="./src/index.js"></script>
+
 </html>
